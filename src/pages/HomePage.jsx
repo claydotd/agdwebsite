@@ -26,7 +26,7 @@ const services = [
   {
     to: '/photo',
     title: 'photo',
-    copy: 'band pictures, portraits, outings, events, and weddings in edinburgh, scotland.',
+    copy: 'band pictures, portraits, outings, events, and weddings across scotland.',
   },
 ]
 
@@ -50,7 +50,7 @@ export default function HomePage() {
         </h1>
         <p className="lead">
           analogue gone digital is <strong>clay leslie</strong>'s audio production, website development, and photography service, based
-          in leith, edinburgh, helping people across scotland create a complete and unique digital presence at a price they can afford.
+          in leith, helping people create a complete and unique digital presence at a price they can afford.
         </p>
         <p className="lead">
           embracing warmth and warble in audio, movement and organic interactions on websites, and haze and grain in photography is all part of translating the analogue into the digital while making it feel real.
@@ -80,11 +80,11 @@ export default function HomePage() {
             )}
 
             {service.to === '/web-design' && (
-              <img src={laptop} alt="Web design in Edinburgh and Scotland" className="card-image" />
+              <img src={laptop} alt="Websites made in Scotland" className="card-image" />
             )}
 
             {service.to === '/photo' && (
-              <img src={cameraSlr} alt="Film photography in Leith, Scotland" className="card-image" />
+              <img src={cameraSlr} alt="Film photography in Edinburgh, Scotland" className="card-image" />
             )}
 
             <h2>{service.title}</h2>
@@ -99,11 +99,8 @@ export default function HomePage() {
       <section id="contact" className="contact">
         <h2>let&apos;s create something together</h2>
         <p>
-          Email{' '}
-          <a href="mailto:hello@analoguegonedigital.co.uk">hello@analoguegonedigital.co.uk</a> with a
-          quick description of your project and timeline.
+          Email <a href="mailto:hello@analoguegonedigital.co.uk">hello@analoguegonedigital.co.uk</a> with a quick description of your project and timeline.
         </p>
-
       </section>
     </main>
   )
