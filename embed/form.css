@@ -20,7 +20,6 @@
   --field-bg: rgba(19, 16, 13, 0.55);
   --field-bg-lit: rgba(19, 16, 13, 0.75);
 
-  color-scheme: dark;
   font-family:
     'SF Pro Text',
     'SF Pro Display',
@@ -41,8 +40,10 @@
    set `background: var(--bg)` instead if the form is ever opened on its own. */
 html,
 body {
+  padding: 1rem;
   margin: 0;
   background: transparent;
+  background-color: transparent;
   color: var(--text);
 }
 
