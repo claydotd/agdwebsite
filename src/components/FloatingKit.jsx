@@ -27,6 +27,11 @@ const kitSets = {
     { src: cameraBrownie, name: 'photo', drift: 'c', driftDuration: 22, driftDelay: 0 },
     { src: cameraSlr, name: 'photo-2', drift: 'd', driftDuration: 19, driftDelay: -6 },
   ],
+  '/about': [
+    { src: cameraSlr, name: 'photo-2', drift: 'b', driftDuration: 19, driftDelay: -3 },
+    { src: tapeRecorder, name: 'audio-3', drift: 'c', driftDuration: 21, driftDelay: -7 },
+    { src: headphones, name: 'audio-4', drift: 'd', driftDuration: 18, driftDelay: -11 },
+  ],
 }
 
 function getKitItems(pathname) {

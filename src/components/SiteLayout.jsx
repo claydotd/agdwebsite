@@ -11,6 +11,7 @@ const navLinks = [
   { to: '/audio', label: 'audio' },
   { to: '/web-design', label: 'web design' },
   { to: '/photo', label: 'photo' },
+  { to: '/about', label: 'about' },
 ]
 
 const lights = [

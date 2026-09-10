@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import AudioPage from './pages/AudioPage'
 import WebDesignPage from './pages/WebDesignPage'
 import PhotoPage from './pages/PhotoPage'
+import About from './pages/About'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="audio" element={<AudioPage />} />
           <Route path="web-design" element={<WebDesignPage />} />
           <Route path="photo" element={<PhotoPage />} />
+          <Route path="about" element={<About />} />
         </Route>
       </Routes>
     </BrowserRouter>

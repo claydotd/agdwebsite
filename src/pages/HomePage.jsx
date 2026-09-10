@@ -1,9 +1,9 @@
 /* 
 TO DO:
-1. Revamp homepage format and copy. ✓
-2. Revamp web design page to better showcase examples of work.
-3. add an "about me" page to include a photo and a bit of text about the person behind the brand.
-4. add a proper contact page
+1✓ Revamp homepage format and copy. 
+2. Revamp web design page to better showcase examples of work. I'm going to consolidate all portfolio items into one page that has web, audio, and photo sections.
+3✓ add an "about me" page to include a photo and a bit of text about the person behind the brand.
+4. add a proper contact page with a form that sends an email to hello@analoguegonedigital.co.uk
 */
 
 import { useEffect, useState } from 'react'
@@ -59,8 +59,7 @@ const comparisons = [
   },
   {
     feature: 'design',
-    builders: 'templates',
-    agencies: 'custom',
+    builders: 'stuck with templates',
     analogue: 'made with you',
   },
   {
@@ -130,10 +129,10 @@ export default function HomePage() {
         {/* <p className="eyebrow">analogue gone digital</p> */}
         <h1>
           you could have a website like <em>this</em> with{' '}
-          <span className="hero-no">no monthly fees</span>.
+          <span className="hero-no">no hosting fees</span>.
         </h1>
         <p className="lead">
-        analogue gone digital is <em>clay leslie</em>'s website development, audio production, and photography service, based in leith, helping people create a complete and unique digital presence at a price they can afford.
+        analogue gone digital is <Link className="link-underline" to="/about"><em>clay leslie</em></Link>'s website development, audio production, and photography service, based in leith, helping people create a complete and unique digital presence at a cost they can afford.
         </p>
         <p className="lead lead-close">
           analogue gone digital is aimed at giving musicians, artists, writers, and other creatives a one-stop-shop
@@ -154,7 +153,7 @@ export default function HomePage() {
       <section className="compare" aria-labelledby="compare-heading">
         <h2 id="compare-heading">why get <em>analogue gone digital</em> to do it?</h2>
         <p className="compare-intro">
-          diy website builders are easy until the monthly fees, ads, and unconsented tracking show up.
+          diy website builders are easy until you have a creative idea for how you want it to look. and then the monthly fees and ads show up. :(
         </p>
         <div className="compare-wrap">
           <table className="compare-table">

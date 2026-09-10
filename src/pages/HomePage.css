@@ -27,6 +27,19 @@
   color: #111;
 }
 
+.link-underline {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 0.1em;
+  color: var(--text-h);
+  transition: color 160ms ease;
+}
+
+.link-underline:hover,
+.link-underline:focus-visible {
+  color: var(--accent);
+}
+
 .rotator {
   margin: 1rem auto 0;
   text-align: center;
