@@ -31,6 +31,20 @@ export const pages = {
     keywords:
       'photographer Leith, photographer Edinburgh, film photography Scotland, band photography Edinburgh, wedding photographer Leith, portrait photographer Scotland',
   },
+  '/contact': {
+    title: 'Contact | web design, audio & photography in Leith, Scotland',
+    description:
+      'Get in touch about web design, audio production, or photography in Leith, Edinburgh, and across Scotland. Fill in the enquiry form or email hello@analoguegonedigital.co.uk.',
+    keywords:
+      'contact web designer Edinburgh, hire audio producer Leith, book photographer Edinburgh, web design enquiry Scotland',
+  },
+  '/about': {
+    title: 'About Clay Leslie | analogue gone digital, Leith',
+    description:
+      'Clay Leslie is a website developer, audio producer, and photographer based in Leith, Edinburgh, working with musicians, artists, and creatives across Scotland.',
+    keywords:
+      'Clay Leslie, web developer Leith, audio producer Edinburgh, photographer Scotland, about analogue gone digital',
+  },
 }
 
 export const businessJsonLd = {

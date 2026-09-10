@@ -75,7 +75,7 @@ export default function AudioPage() {
 
       <footer className="audio-footer">
         <p className="audio-note">songs, albums, podcasts, soundscapes.</p>
-        <Link className="audio-cta" to="/#contact">
+        <Link className="audio-cta" to="/contact">
           get in touch
         </Link>
       </footer>

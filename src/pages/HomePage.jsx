@@ -3,7 +3,7 @@ TO DO:
 1✓ Revamp homepage format and copy. 
 2. Revamp web design page to better showcase examples of work. I'm going to consolidate all portfolio items into one page that has web, audio, and photo sections.
 3✓ add an "about me" page to include a photo and a bit of text about the person behind the brand.
-4. add a proper contact page with a form that sends an email to hello@analoguegonedigital.co.uk
+4✓ add a proper contact page with a form that sends an email to hello@analoguegonedigital.co.uk
 */
 
 import { useEffect, useState } from 'react'
@@ -136,10 +136,10 @@ export default function HomePage() {
         </p>
         <p className="lead lead-close">
           analogue gone digital is aimed at giving musicians, artists, writers, and other creatives a one-stop-shop
-          for everything they need to showcase their work online.
+          for everything they need to showcase their work online. <strong><em>let's make it happen</em></strong>.
         </p>
         <div className="cta-row">
-          <Link className="button button-solid" to="/#contact">
+          <Link className="button button-solid" to="/contact">
             get in touch
           </Link>
           <Link className="button" to="/web-design">
@@ -216,7 +216,7 @@ export default function HomePage() {
       <section id="contact" className="contact">
         <h2>let&apos;s create something together</h2>
         <p>
-          Email <a href="mailto:hello@analoguegonedigital.co.uk">hello@analoguegonedigital.co.uk</a> with a quick description of your project and timeline.
+          Fill in the <Link to="/contact">enquiry form</Link> with a quick description of your project and timeline, or email <a href="mailto:hello@analoguegonedigital.co.uk">hello@analoguegonedigital.co.uk</a> directly.
         </p>
       </section>
     </main>

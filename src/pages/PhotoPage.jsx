@@ -80,7 +80,7 @@ export default function PhotoPage() {
       </section>
       <footer className="photo-footer">
         <p className="photo-process">film feel · natural light · capturing a moment</p>
-        <Link className="photo-cta" to="/#contact">get in touch</Link>
+        <Link className="photo-cta" to="/contact">get in touch</Link>
       </footer>
     </main>
   )

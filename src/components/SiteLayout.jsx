@@ -8,10 +8,9 @@ import './SiteLayout.css'
 
 const navLinks = [
   { to: '/', label: 'home' },
-  { to: '/audio', label: 'audio' },
-  { to: '/web-design', label: 'web design' },
-  { to: '/photo', label: 'photo' },
+  { to: '/portfolio', label: 'portfolio' },
   { to: '/about', label: 'about' },
+  { to: '/contact', label: 'contact' },
 ]
 
 const lights = [
@@ -125,7 +124,7 @@ export default function SiteLayout() {
       <footer className="site-footer">
         <p>analogue gone digital · leith, edinburgh, scotland</p>
         <p>
-          <Link to="/#contact">contact</Link>
+          <Link to="/contact">contact</Link>
           {' · '}
           <a href="mailto:hello@analoguegonedigital.co.uk">hello@analoguegonedigital.co.uk</a>
         </p>

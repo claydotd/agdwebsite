@@ -144,7 +144,7 @@ export default function WebDesignPage() {
           I can build a website from scratch and coordinate hosting and updates, or I can build custom components for shopify websites.
           whatever you need, I'm here to help make it happen.
         </p>
-        <Link className="web-cta" to="/#contact">
+        <Link className="web-cta" to="/contact">
           get in touch →
         </Link>
       </aside>
