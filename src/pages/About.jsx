@@ -26,7 +26,7 @@ export default function About() {
           </p>
           <p>In my actual coursework, I learned about software development, UI/UX design, audio production, and how to use technology creatively.{' '}
             For my coursework, I focused a lot on creating interfaces for musicians to create music with, some you could classify as instruments, others were a lot less... musical. Either way, it got me practicing lots of front-end developemnt with JavaScript.{' '}
-            This was a great foundation for starting my career, and led me into the realm of edtech andcoding education.
+            This was a great foundation for starting my career, and led me into the realm of edtech and coding education.
           </p>
           <h2>where I'm at now</h2>
           <p>After working for 6 years in the edtech industry, I got tired of working within the corporate model, where speed and profitability were prioritised over quality and user experience.{' '}
