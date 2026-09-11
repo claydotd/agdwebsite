@@ -17,6 +17,7 @@ import pittenweem from '../assets/photo-portfolio/pittenweem.jpeg'
 import architecture from '../assets/photo-portfolio/architecture.jpeg'
 import golden1 from '../assets/photo-portfolio/golden1.jpg'
 import golden2 from '../assets/photo-portfolio/golden2.jpg'
+import party from '../assets/photo-portfolio/party.jpeg'
 
 const sections = [
   { id: 'web', label: 'web' },
@@ -99,6 +100,7 @@ const photos = [
   { src: architecture, alt: 'Architecture in Edinburgh' },
   { src: golden1, alt: 'Golden hour in the countryside' },
   { src: golden2, alt: 'Golden hour in the countryside' },
+  { src: party, alt: 'Party on film' },
 ]
 
 function WebCard({ project }) {
