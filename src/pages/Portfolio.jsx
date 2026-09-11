@@ -27,7 +27,7 @@ const sections = [
 // set `live: false` on a site that isn't published yet
 const webProjects = [
   {
-    title: 'digillama',
+    title: 'c+c artworks',
     stack: 'react / typescript / github pages',
     blurb:
       'an artist portfolio built around one idea: morphing blobs, like a lava lamp. new pieces go up through github without touching any code.',
