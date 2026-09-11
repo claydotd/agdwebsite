@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import AudioPlayer from './AudioPlayer'
 import './AudioPage.css'
 
 const tracks = [
@@ -37,17 +36,17 @@ export default function AudioPage() {
       </Link>
 
       <header className="audio-hero">
-        <p className="audio-eyebrow">holistic audio production. digital audio that feels human.</p>
+        <p className="audio-eyebrow">digital audio that feels human.</p>
         <h1 className="audio-title">audio</h1>
         <p className="audio-lead">
           I produce music, edit podcasts, and would love to take on any audio production/editing work you have for me.
         </p>
         <p className="rates">
-            £20 per hour <span>+ room hire costs</span>
+            pay what you can <span>+ any necessary studio hire costs</span>
           </p>
-        <a className="jump-to-portfolio" href="#portfolio">
-          jump to portfolio ↓
-        </a>
+        <Link className="jump-to-portfolio" to="/portfolio#audio">
+          hear the work →
+        </Link>
       </header>
 
       <div className="audio-content">
@@ -63,14 +62,6 @@ export default function AudioPage() {
           ))}
         </section>
 
-        <section id="portfolio" className="audio-portfolio">
-          <h2>Podcast Portfolio</h2>
-            <Link className="audio-cta" to="https://picturebooksummit.libsyn.com" target='_blank'>Picture Book Summit Podcast</Link>
-            <Link className="audio-cta" to="https://sites.libsyn.com/603895" target='_blank'>12X12 Project Podcast</Link>
-            <br /><br />
-          <h2>Music Portfolio</h2>
-          <AudioPlayer />
-        </section>
       </div>
 
       <footer className="audio-footer">

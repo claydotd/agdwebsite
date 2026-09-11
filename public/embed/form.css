@@ -20,7 +20,6 @@
   --field-bg: rgba(19, 16, 13, 0.55);
   --field-bg-lit: rgba(19, 16, 13, 0.75);
 
-  color-scheme: dark;
   font-family:
     'SF Pro Text',
     'SF Pro Display',
@@ -41,8 +40,10 @@
    set `background: var(--bg)` instead if the form is ever opened on its own. */
 html,
 body {
+  padding: 1rem;
   margin: 0;
   background: transparent;
+  background-color: transparent;
   color: var(--text);
 }
 
@@ -161,42 +162,78 @@ textarea:user-invalid {
   flex: 1;
 }
 
-/* pill checkboxes / radios: <label class="check"><input type="checkbox"> web design</label> */
-.checks {
+/* pill checkboxes / radios:
+   <div class="checks"> or <div class="checkbox-group">
+     <label class="check"> or <label class="checkbox-option">
+       <input type="checkbox"> web design
+     </label>
+   </div>
+*/
+.checks,
+.checkbox-group {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 0.6rem;
+  width: 100%;
 }
 
-.check {
+.check,
+.checkbox-option,
+label:has(> input[type='checkbox']),
+label:has(> input[type='radio']) {
   display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem 0.9rem;
   border: 1px solid var(--border);
   border-radius: 999px;
   background: rgba(242, 232, 214, 0.04);
+  white-space: nowrap;
   cursor: pointer;
   transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
 }
 
-.check:hover {
+.check:hover,
+.checkbox-option:hover,
+label:has(> input[type='checkbox']):hover,
+label:has(> input[type='radio']):hover {
   border-color: rgba(255, 193, 94, 0.6);
 }
 
-.check input {
-  accent-color: var(--accent);
+.check input,
+.checkbox-option input,
+input[type='checkbox'],
+input[type='radio'] {
+  flex: none;
+  width: 1em;
+  height: 1em;
   margin: 0;
+  accent-color: var(--accent);
 }
 
-.check:has(input:checked) {
+.check:has(input:checked),
+.checkbox-option:has(input:checked),
+label:has(> input[type='checkbox']:checked),
+label:has(> input[type='radio']:checked) {
   border-color: var(--accent);
   color: var(--accent);
   background: rgba(255, 193, 94, 0.1);
 }
 
-.check:has(input:focus-visible) {
+.check:has(input:focus-visible),
+.checkbox-option:has(input:focus-visible),
+label:has(> input[type='checkbox']:focus-visible),
+label:has(> input[type='radio']:focus-visible) {
   border-color: var(--accent);
+}
+
+.hint {
+  color: var(--text-muted);
+  font-weight: 400;
 }
 
 .actions {
@@ -288,6 +325,21 @@ a:focus-visible {
 @media (max-width: 560px) {
   .row {
     flex-direction: column;
+  }
+
+  .checks,
+  .checkbox-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .check,
+  .checkbox-option,
+  label:has(> input[type='checkbox']),
+  label:has(> input[type='radio']) {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
   }
 }
 

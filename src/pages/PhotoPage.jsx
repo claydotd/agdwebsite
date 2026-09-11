@@ -44,12 +44,11 @@ export default function PhotoPage() {
           <p>
             band pictures, portraits, outings, events, and weddings
             in edinburgh and across scotland.
-            I'm looking to expand my portfolio, so I'm charging budget-friendly
-            rates.
+            I'm looking to expand my portfolio, so I'm open to any photography projects you have for me.
           </p>
 
           <p className="rates">
-            £25 per hour <span>+ film & development at cost</span>
+            pay what you can <span>+ travel costs</span>
           </p>
         </div>
         <blockquote className="photo-quote">

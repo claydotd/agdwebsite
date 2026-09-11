@@ -86,7 +86,7 @@
 }
 
 .bottom-image {
-  width: 300px;
+  width: min(300px, 100%);
   height: auto;
   margin-bottom: 0;
 }

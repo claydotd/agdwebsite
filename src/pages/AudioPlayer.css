@@ -374,7 +374,7 @@
   .ap-list {
     border-right: none;
     border-bottom: 1px solid var(--ap-border);
-    max-height: 230px;
+    max-height: 400px;
   }
 
   .ap-panel {

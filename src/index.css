@@ -29,13 +29,19 @@
   box-sizing: border-box;
 }
 
+/* clip rather than hidden: hidden would make these scroll containers and force
+   overflow-y to auto, which breaks position: sticky and hash scrolling */
+html {
+  overflow-x: clip;
+}
+
 body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
   min-height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body::before {

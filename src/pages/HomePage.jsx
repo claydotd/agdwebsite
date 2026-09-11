@@ -1,19 +1,11 @@
-/* 
-TO DO:
-1✓ Revamp homepage format and copy. 
-2. Revamp web design page to better showcase examples of work. I'm going to consolidate all portfolio items into one page that has web, audio, and photo sections.
-3✓ add an "about me" page to include a photo and a bit of text about the person behind the brand.
-4✓ add a proper contact page with a form that sends an email to hello@analoguegonedigital.co.uk
-*/
-
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
 import './HomePage.css'
 
-import cameraSlr from '../assets/kit-images/camera-slr.png'
-import headphones from '../assets/kit-images/headphones.png'
-import laptop from '../assets/kit-images/laptop.png'
+import cameraSlr from '../assets/kit-images/camera-slr.webp'
+import headphones from '../assets/kit-images/headphones.webp'
+import laptop from '../assets/kit-images/laptop.webp'
 
 const phrases = [
   'record your album',
@@ -142,7 +134,7 @@ export default function HomePage() {
           <Link className="button button-solid" to="/contact">
             get in touch
           </Link>
-          <Link className="button" to="/web-design">
+          <Link className="button" to="/portfolio">
             check out the portfolio
           </Link>
         </div>
@@ -216,7 +208,7 @@ export default function HomePage() {
       <section id="contact" className="contact">
         <h2>let&apos;s create something together</h2>
         <p>
-          Fill in the <Link to="/contact">enquiry form</Link> with a quick description of your project and timeline, or email <a href="mailto:hello@analoguegonedigital.co.uk">hello@analoguegonedigital.co.uk</a> directly.
+          Fill in the <Link className="link-underline" to="/contact">enquiry form</Link> with a quick description of your project and timeline, or email <a className="link-underline" href="mailto:hello@analoguegonedigital.co.uk">hello@analoguegonedigital.co.uk</a> directly.
         </p>
       </section>
     </main>

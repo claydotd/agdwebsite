@@ -84,9 +84,12 @@ export default function SiteLayout() {
   const { pathname, hash } = useLocation()
 
   useLayoutEffect(() => {
-    if (hash === '#contact') {
-      document.querySelector('#contact')?.scrollIntoView()
-      return
+    if (hash.length > 1) {
+      const target = document.getElementById(decodeURIComponent(hash.slice(1)))
+      if (target) {
+        target.scrollIntoView()
+        return
+      }
     }
 
     window.scrollTo({ top: 0, left: 0, behavior: 'auto' })

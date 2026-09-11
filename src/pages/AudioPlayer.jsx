@@ -10,11 +10,18 @@ import montrealUrl     from '../assets/audio-portfolio/montreal.mp3'
 import bleugrooveUrl   from '../assets/audio-portfolio/bleugroove.mp3'
 import bummersummerUrl from '../assets/audio-portfolio/bummersummer.mp3'
 import lactoseUrl      from '../assets/audio-portfolio/lactose.mp3'
+import leftsideUrl     from '../assets/audio-portfolio/leftside.mp3'
 
 import './AudioPlayer.css'
 
 // ─── Track data ───────────────────────────────────────────────────────────────
 const TRACKS = [
+  {
+    id: 'leftside',
+    title: 'the left side of our street (demo)',
+    src: leftsideUrl,
+    tags: ['chill', 'guitars', 'indie-rock', 'tape', 'vocals', 'harmonizer', 'demo'],
+  },
   {
     id: 'blue',
     title: 'blue',

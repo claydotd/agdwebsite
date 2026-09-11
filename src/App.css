@@ -207,7 +207,10 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
-  overflow: visible;
+  /* trims the sideways spill from the negative offsets below,
+     while leaving the vertical drift free */
+  overflow-x: clip;
+  overflow-y: visible;
   z-index: 0;
 }
 
@@ -319,6 +322,53 @@
 .floating-kit--photo .kit-wrap-photo {
   top: 20vh;
   left: 12%;
+}
+
+/* Spread all kit pieces down the tall portfolio page */
+.floating-kit--portfolio .kit-wrap-web {
+  width: 16%;
+  top: 6%;
+  right: 1%;
+}
+
+.floating-kit--portfolio .kit-wrap-audio {
+  width: 18%;
+  top: 10%;
+  left: -30px;
+}
+
+.floating-kit--portfolio .kit-wrap-photo {
+  width: 11%;
+  top: 28%;
+  left: auto;
+  right: -15px;
+}
+
+.floating-kit--portfolio .kit-wrap-audio-2 {
+  width: 13%;
+  top: 40%;
+  right: 4%;
+}
+
+.floating-kit--portfolio .kit-wrap-audio-3 {
+  width: 16%;
+  top: 52%;
+  bottom: auto;
+  left: -25px;
+}
+
+.floating-kit--portfolio .kit-wrap-audio-4 {
+  width: 14%;
+  top: 68%;
+  bottom: auto;
+  right: 2%;
+}
+
+.floating-kit--portfolio .kit-wrap-photo-2 {
+  width: 13%;
+  top: 82%;
+  right: auto;
+  left: 4%;
 }
 
 @keyframes kit-drift-a {
